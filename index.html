@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TamaWhere — O Seu Bichinho Virtual no Pulso e no Celular</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="O primeiro Tamagotchi real para Wear OS e Android. Cuide, alimente, brinque, evolua e crie seus próprios TamaPacks em pixel art nostálgica." />
+  <meta name="keywords" content="Tamagotchi, TamaWhere, Wear OS, Android, Smartwatch, Virtual Pet, Bichinho Virtual, Pixel Art, Retro Games" />
+  <meta name="author" content="David Kalil Braga" />
+  <meta property="og:title" content="TamaWhere — Seu Tamagotchi. Sua Aventura. Sempre com Você!" />
+  <meta property="og:description" content="Engine viva de bichinhos virtuais para Wear OS e smartphone. 90+ criaturas, suporte a mods comunitários e personalização de pets reais." />
+  <meta property="og:image" content="img/banners/banner_pt.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/icons/icon_app_512.png" />
+  <link rel="apple-touch-icon" href="img/icons/icon_app_512.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Floating Pixel Sparkles/Hearts Canvas Background -->
+  <canvas id="pixelCanvas"></canvas>
+
+  <!-- ============================================================
+       Site Header / Navigation Bar
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="TamaWhere Home">
+        <img src="img/icons/icon_app_512.png" alt="TamaWhere Logo" class="brand-icon" />
+        <span class="brand-name">TamaWhere</span>
+      </a>
+
+      <!-- Desktop & Mobile Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features" data-i18n="nav_features">Recursos</a></li>
+        <li><a href="#screenshots" data-i18n="nav_screenshots">Telas</a></li>
+        <li><a href="#tamadex" data-i18n="nav_creatures">TamaDex</a></li>
+        <li><a href="#custom-pet" data-i18n="nav_custom_pet">Pet Real no Jogo</a></li>
+        <li><a href="#tamapacks" data-i18n="nav_tamapacks">TamaPacks</a></li>
+        <li><a href="#downloads" data-i18n="nav_downloads">Download Pack</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Language Switcher Toggle -->
+        <button id="langToggleBtn" class="lang-btn" aria-label="Alterar idioma / Change language">
+          <span class="flag-icon">🇧🇷</span> PT
+        </button>
+
+        <!-- CTA Direct Store Link -->
+        <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="nav-cta-btn"
+           data-i18n="nav_download_app">
+          Baixar o Jogo
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu de Navegação">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         1. Hero Section
+         ============================================================ -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge" data-i18n="hero_badge">
+            🐾 O PRIMEIRO TAMAGOTCHI REAL NO SEU PULSO E SMARTPHONE
+          </div>
+          <h1 class="hero-title">
+            <span class="hero-title-highlight" data-i18n="hero_title">Seu Tamagotchi. Sua Aventura. Sempre com Você!</span>
+          </h1>
+          <p class="hero-desc" data-i18n="hero_desc">
+            Uma engine viva de bichinhos virtuais com pixel art nostálgica, sistema profundo de evolução, minigames e sincronização total entre Wear OS e Android.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-primary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.609 1.814L13.793 12 3.61 22.186a1.99 1.99 0 0 1-.61-.926V2.74c0-.34.1-.667.609-.926zm11.603 11.604l2.429 2.428-11.83 6.83 9.401-9.258zm2.43-2.428L3.811 1.732l11.83 6.83-2.429 2.426zm1.328 1.328l2.94 1.7c.69.4.69 1.056 0 1.456l-2.94 1.7-1.89-1.928 1.89-1.928z"/>
+              </svg>
+              <span data-i18n="hero_cta_play">Disponível no Google Play</span>
+            </a>
+
+            <a href="#tamadex" class="btn-secondary">
+              <span data-i18n="hero_cta_dex">Conhecer Criaturas</span>
+              <span>➔</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value">90+</span>
+              <span class="stat-label" data-i18n="stat_creatures">Criaturas</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">100%</span>
+              <span class="stat-label" data-i18n="stat_moddable">Modificável</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Wear OS</span>
+              <span class="stat-label" data-i18n="stat_devices">Smartwatch & Fone</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">0% P2W</span>
+              <span class="stat-label" data-i18n="stat_fair">Zero Pay-to-Win</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-banner-card">
+            <img src="img/banners/banner_pt.png" 
+                 alt="TamaWhere Official Banner" 
+                 id="heroBannerImg" 
+                 class="hero-banner-img" />
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-left">
+            <img src="img/sprites/003_idle.gif" alt="Sansão Sprite" />
+            <span>Sansão #003</span>
+          </div>
+          <div class="floating-badge badge-right">
+            <img src="img/sprites/090_idle.gif" alt="Pegasus Sprite" />
+            <span>Pegasus #090 ✨</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. Features Section
+         ============================================================ -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="features_tag">RECURSOS DO JOGO</span>
+          <h2 class="section-title" data-i18n="features_title">Nostalgia dos Anos 90 com a Tecnologia de Hoje</h2>
+          <p class="section-subtitle" data-i18n="features_subtitle">
+            Toda a magia clássica dos bichinhos virtuais, reinventada para funcionar no seu pulso e no seu bolso.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-box">🍖</div>
+            <h3 class="feature-title" data-i18n="feat_care_title">Cuide & Alimente</h3>
+            <p class="feature-desc" data-i18n="feat_care_desc">
+              Alimente com comidas gostosas, dê banho, limpe as sujeiras e cure doenças. Monitore fome, humor, energia e peso em tempo real com lembretes inteligentes.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">🎮</div>
+            <h3 class="feature-title" data-i18n="feat_games_title">Minigames Interativos</h3>
+            <p class="feature-desc" data-i18n="feat_games_desc">
+              Jogue Pedra-Papel-Tesoura ou colete comidinhas no minigame de queda. Seu companheiro se diverte, ganha experiência e sobe de nível.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">✨</div>
+            <h3 class="feature-title" data-i18n="feat_evo_title">Linhas Evolutivas</h3>
+            <p class="feature-desc" data-i18n="feat_evo_desc">
+              O modo como você cuida determina o destino! Cada criatura possui estágios de crescimento até alcançar formas adultas espetaculares ou lendárias.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">⌚</div>
+            <h3 class="feature-title" data-i18n="feat_wear_title">Wear OS + Celular</h3>
+            <p class="feature-desc" data-i18n="feat_wear_desc">
+              Jogue direto na tela redonda do seu smartwatch com tiles e gestos rápidos, ou abra o app no celular para gerenciar seu TamaDex e estatísticas completas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. Screenshots Section (Device Mockup)
+         ============================================================ -->
+    <section class="screenshots-section" id="screenshots">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="screenshots_tag">INTERFACE DO JOGO</span>
+          <h2 class="section-title" data-i18n="screenshots_title">Design Retrô Cuidadosamente Lapidado</h2>
+          <p class="section-subtitle" data-i18n="screenshots_subtitle">
+            Veja como a interface foi desenhada tanto para telas grandes de smartphones quanto para mostradores redondos de smartwatches.
+          </p>
+        </div>
+
+        <!-- Platform Tabs -->
+        <div class="sc-tab-controls">
+          <button class="sc-tab-btn active" data-tab="mobile" data-i18n="tab_mobile">📱 Smartphone</button>
+          <button class="sc-tab-btn" data-tab="wear" data-i18n="tab_wear">⌚ Smartwatch (Wear OS)</button>
+        </div>
+
+        <!-- Interactive Mockup Showcase -->
+        <div class="sc-display-wrapper">
+          <button class="sc-nav-btn sc-prev-btn" id="scPrevBtn" aria-label="Screenshot Anterior">‹</button>
+
+          <div class="device-frame frame-mobile" id="mockupDevice">
+            <img src="img/screenshots/mobile_home.png" alt="TamaWhere Screen" id="mockupScreenImg" class="mockup-screen-img" />
+          </div>
+
+          <button class="sc-nav-btn sc-next-btn" id="scNextBtn" aria-label="Próxima Screenshot">›</button>
+
+          <p class="mockup-caption" id="mockupCaption">Tela Principal (Cuidado & Status)</p>
+
+          <!-- Thumbnails Strip -->
+          <div class="mockup-thumbs" id="mockupThumbs"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. TamaDex Section (33 Curated Creatures)
+         ============================================================ -->
+    <section class="tamadex-section" id="tamadex">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tamadex_tag">CRIATURAS</span>
+          <h2 class="section-title" data-i18n="tamadex_title">Conheça os Astros do TamaWhere</h2>
+          <p class="section-subtitle" data-i18n="tamadex_subtitle">
+            Apresentamos uma seleção das 33 criaturas mais icônicas do jogo. De companheiros fiéis a lendas mitológicas!
+          </p>
+        </div>
+
+        <!-- Element Filters -->
+        <div class="dex-filter-bar">
+          <button class="dex-filter-btn active" data-filter="all" data-i18n="filter_all">Todos</button>
+          <button class="dex-filter-btn" data-filter="normal" data-i18n="filter_normal">Normal</button>
+          <button class="dex-filter-btn" data-filter="fire" data-i18n="filter_fire">Fogo</button>
+          <button class="dex-filter-btn" data-filter="water" data-i18n="filter_water">Água</button>
+          <button class="dex-filter-btn" data-filter="grass" data-i18n="filter_grass">Planta</button>
+          <button class="dex-filter-btn" data-filter="psychic" data-i18n="filter_psychic">Psíquico</button>
+          <button class="dex-filter-btn" data-filter="dragon" data-i18n="filter_dragon">Dragão</button>
+          <button class="dex-filter-btn" data-filter="legendary" data-i18n="filter_legendary">Lendários ✨</button>
+        </div>
+
+        <!-- Dynamic Grid of 33 Creatures -->
+        <div class="tamadex-grid" id="tamadexGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. Custom Pet Section (The 7 Real Pets Showcase)
+         ============================================================ -->
+    <section class="custom-pet-section" id="custom-pet">
+      <div class="container">
+        <div class="custom-pet-wrapper">
+          <div class="section-header">
+            <span class="custom-badge-vip" data-i18n="custom_badge_vip">⭐ Feito sob Medida para Você</span>
+            <h2 class="section-title" data-i18n="custom_title">Seu Bichinho Real Dentro do Jogo!</h2>
+            <p class="section-subtitle" data-i18n="custom_subtitle">
+              Eternize seu melhor amigo de 4 patas como uma criatura jogável no TamaWhere, desenhado à mão em pixel art com 3 estágios evolutivos!
+            </p>
+          </div>
+
+          <!-- Pet Tabs / Selector -->
+          <div class="custom-pet-tabs" id="customPetTabs"></div>
+
+          <!-- Evolution Line & Real Photo Display -->
+          <div id="customPetDetail"></div>
+
+          <!-- Custom Pet Service Call to Action -->
+          <div class="custom-cta-card">
+            <h4 data-i18n="custom_cta_title">Quer o seu pet imortalizado no TamaWhere?</h4>
+            <p data-i18n="custom_cta_desc">
+              Transformamos a foto do seu cachorrinho, gatinho ou outro animal de estimação em um personagem exclusivo com todas as animações.
+            </p>
+            <a href="mailto:davidkalil@outlook.com?subject=Custom%20Pet%20TamaWhere%20-%20Solicita%C3%A7%C3%A3o%20de%20Or%C3%A7amento" 
+               class="btn-gold" 
+               data-i18n="btn_quote_custom">
+              ✨ Solicitar Orçamento Personalizado
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. TamaPacks Modding Section
+         ============================================================ -->
+    <section class="tamapacks-section" id="tamapacks">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="packs_tag">LIBERDADE TOTAL</span>
+          <h2 class="section-title" data-i18n="packs_title">Uma Engine Universal: Crie seus Próprios TamaPacks</h2>
+          <p class="section-subtitle" data-i18n="packs_subtitle">
+            O TamaWhere não se limita a um único universo. O jogo foi construído como uma engine aberta que permite à comunidade desenhar e carregar qualquer criatura!
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">🎨</div>
+            <h3 class="pillar-title" data-i18n="pack_pillar1_title">Sprites & Animações</h3>
+            <p class="pillar-desc" data-i18n="pack_pillar1_desc">
+              Crie animações de repouso, alimentação, banho, alegria e tristeza com seus próprios arquivos de imagem ou GIFs animados.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">⚡</div>
+            <h3 class="pillar-title" data-i18n="pack_pillar2_title">Importação em 1 Toque</h3>
+            <p class="pillar-desc" data-i18n="pack_pillar2_desc">
+              Carregue arquivos .tamapack diretamente do armazenamento ou apenas cole uma URL da web para que o jogo instale tudo sozinho.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🌍</div>
+            <h3 class="pillar-title" data-i18n="pack_pillar3_title">Ecossistema da Comunidade</h3>
+            <p class="pillar-desc" data-i18n="pack_pillar3_desc">
+              Compartilhe com seus amigos, distribua pacotes temáticos na internet e faça parte da evolução contínua do projeto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. Downloads Section (Official Gen1 Pack)
+         ============================================================ -->
+    <section class="downloads-section" id="downloads">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="download_tag">PACOTES OFICIAIS</span>
+          <h2 class="section-title" data-i18n="download_title">Baixe os TamaPacks Gratuitos</h2>
+          <p class="section-subtitle" data-i18n="download_subtitle">
+            Experimente agora o pacote Gen 1 com todas as 90 criaturas, 540 animações completas e efeitos sonoros retrô.
+          </p>
+        </div>
+
+        <div class="download-pack-card">
+          <div class="pack-card-header">
+            <div>
+              <h3 class="pack-card-title" data-i18n="gen1_card_title">Generation 1 Community Pack</h3>
+              <div class="pack-badges">
+                <span class="pack-badge" data-i18n="gen1_badge_size">Tamanho: ~12.3 MB</span>
+                <span class="pack-badge" data-i18n="gen1_badge_creatures">90 Criaturas</span>
+                <span class="pack-badge" data-i18n="gen1_badge_animations">540+ Animações</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="pack-card-desc" data-i18n="gen1_card_desc">
+            O pacote base completo de lançamento. Contém 90 espécies distintas com linhas evolutivas completas, minigames e compatibilidade total com Android e Wear OS.
+          </p>
+
+          <div class="pack-actions">
+            <a href="downloads/gen1.tamapack" download="gen1_tamawhere.tamapack" class="btn-download">
+              <span data-i18n="btn_download_file">⬇️ Baixar Arquivo .tamapack</span>
+            </a>
+
+            <button class="btn-copy-url" id="copyPackUrlBtn">
+              <span data-i18n="btn_copy_url">📋 Copiar URL para o Jogo</span>
+            </button>
+          </div>
+
+          <div class="pack-instructions">
+            <h4 data-i18n="how_to_import_title">Como importar no jogo:</h4>
+            <ol>
+              <li data-i18n="import_step1">1. Abra o TamaWhere no celular ou relógio.</li>
+              <li data-i18n="import_step2">2. Vá em Configurações > Gerenciador de TamaPacks.</li>
+              <li data-i18n="import_step3">3. Toque em 'Importar Arquivo' (selecione o .tamapack baixado) OU 'Importar por URL' e cole o link direto!</li>
+            </ol>
+          </div>
+
+          <p class="pack-disclaimer">
+            <strong data-i18n="disclaimer_title">Aviso Legal e Propriedade Intelectual:</strong>
+            <span data-i18n="disclaimer_text">
+              Os TamaPacks são pacotes modulares criados de fã para fãs. O aplicativo TamaWhere é uma engine de bichinhos virtuais independente e não possui filiação comercial com marcas registradas de terceiros. Todos os pacotes fornecidos gratuitamente pela comunidade respeitam os direitos autorais de seus respectivos criadores artísticos.
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. Create Your Own Pack Section
+         ============================================================ -->
+    <section class="create-pack-section" id="create">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="create_tag">SEJA UM CRIADOR</span>
+          <h2 class="section-title" data-i18n="create_title">Construa o seu Próprio Universo</h2>
+          <p class="section-subtitle" data-i18n="create_subtitle">
+            Quer ver suas próprias criações ou um pacote personalizado ganhando vida no jogo? Nós te ajudamos com a documentação e ferramentas de exportação.
+          </p>
+        </div>
+
+        <div class="create-steps-grid">
+          <div class="step-card">
+            <span class="step-number" data-i18n="create_step1_num">01</span>
+            <h3 class="step-title" data-i18n="create_step1_title">Desenhe os Sprites</h3>
+            <p class="step-desc" data-i18n="create_step1_desc">
+              Pixel art em grades de 32x32, 48x48 ou 64x64 com as posturas básicas de repouso, alimentação e celebração.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number" data-i18n="create_step2_num">02</span>
+            <h3 class="step-title" data-i18n="create_step2_title">Defina as Regras</h3>
+            <p class="step-desc" data-i18n="create_step2_desc">
+              Configure status de fome, taxas de evolução, nomes e tipos em um arquivo JSON simples e intuitivo.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number" data-i18n="create_step3_num">03</span>
+            <h3 class="step-title" data-i18n="create_step3_title">Empacote e Jogue</h3>
+            <p class="step-desc" data-i18n="create_step3_desc">
+              Compacte os arquivos em um container .tamapack e envie para o seu aparelho ou publique na comunidade.
+            </p>
+          </div>
+        </div>
+
+        <div class="create-cta-box">
+          <a href="mailto:davidkalil@outlook.com?subject=TamaWhere%20-%20Suporte%20ao%20Criador%20de%20Packs" 
+             class="btn-secondary" 
+             data-i18n="btn_contact_creator">
+            💬 Falar com a Equipe de Criação
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       Footer Section
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <img src="img/icons/icon_app_512.png" alt="TamaWhere Logo" class="brand-icon" />
+            <span class="brand-name">TamaWhere</span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">
+            O universo nostálgico dos bichinhos virtuais, reinventado para o seu pulso e smartphone.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer_quick_links">Navegação Rápida</h5>
+          <ul class="footer-links">
+            <li><a href="#features" data-i18n="nav_features">Recursos</a></li>
+            <li><a href="#screenshots" data-i18n="nav_screenshots">Telas</a></li>
+            <li><a href="#tamadex" data-i18n="nav_creatures">TamaDex</a></li>
+            <li><a href="#custom-pet" data-i18n="nav_custom_pet">Pet Real no Jogo</a></li>
+            <li><a href="#downloads" data-i18n="nav_downloads">Download Pack</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer_legal">Informações Legais</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="https://drive.google.com/file/d/1L6vecvDLhHIdrcVIpfXwREDzxlfBBZ7p/view" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 data-i18n="footer_privacy">
+                Política de Privacidade
+              </a>
+            </li>
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 data-i18n="footer_play_store">
+                Google Play Store
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5 data-i18n="footer_contact">Contato & Suporte</h5>
+          <ul class="footer-links">
+            <li><a href="mailto:davidkalil@outlook.com">davidkalil@outlook.com</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" target="_blank" rel="noopener noreferrer">Suporte no Google Play</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 TamaWhere. <span data-i18n="footer_rights">Todos os direitos reservados. Feito com paixão por David Kalil Braga.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div id="toastNotification" class="toast-notification"></div>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
