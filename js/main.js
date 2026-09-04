@@ -45,7 +45,6 @@ function setupLanguageSwitcher() {
 
   toggleBtn.addEventListener('click', () => {
     window.i18n.toggleLanguage();
-    // Re-render dynamic elements that need language
     renderTamaDex();
     renderCustomPets();
   });
@@ -112,7 +111,7 @@ function setupPixelParticles() {
     height = canvas.height = window.innerHeight;
   }, { passive: true });
 
-  const colors = ['#e63946', '#2ecc71', '#3498db', '#f1c40f', '#9b59b6'];
+  const colors = ['#ff3366', '#2ecc71', '#3498db', '#f1c40f', '#9b59b6'];
   const particles = [];
   const count = Math.min(35, Math.floor(window.innerWidth / 35));
 
@@ -123,7 +122,7 @@ function setupPixelParticles() {
     reset(initial = false) {
       this.x = Math.random() * width;
       this.y = initial ? Math.random() * height : height + 20;
-      this.size = Math.floor(Math.random() * 3 + 2) * 2; // pixel grid aligned
+      this.size = Math.floor(Math.random() * 3 + 2) * 2;
       this.speedY = -(Math.random() * 0.6 + 0.3);
       this.speedX = (Math.random() - 0.5) * 0.4;
       this.color = colors[Math.floor(Math.random() * colors.length)];
@@ -141,7 +140,6 @@ function setupPixelParticles() {
       ctx.fillStyle = this.color;
       if (this.type === 'heart') {
         const s = this.size;
-        // Draw pixel mini heart
         ctx.fillRect(this.x, this.y, s, s);
         ctx.fillRect(this.x - s, this.y - s, s, s);
         ctx.fillRect(this.x + s, this.y - s, s, s);
@@ -171,7 +169,6 @@ function setupPixelParticles() {
     animationFrameId = requestAnimationFrame(animate);
   }
 
-  // Only animate when visible
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -186,24 +183,24 @@ function setupPixelParticles() {
 }
 
 // ------------------------------------------------------------
-// 5. Screenshots Gallery (Mobile & Wear OS)
+// 5. Screenshots Gallery (Mobile & Wear OS use identical titles)
 // ------------------------------------------------------------
 const screenshotsData = {
   mobile: [
-    { src: 'img/screenshots/mobile_home.png', titleKey: 'sc_mobile_home' },
-    { src: 'img/screenshots/mobile_Tamadex.png', titleKey: 'sc_mobile_tamadex' },
-    { src: 'img/screenshots/mobile_selecao.png', titleKey: 'sc_mobile_selecao' },
-    { src: 'img/screenshots/mobile_Statcard.png', titleKey: 'sc_mobile_statcard' },
-    { src: 'img/screenshots/mobile_pupilo.png', titleKey: 'sc_mobile_pupilo' },
-    { src: 'img/screenshots/mobile_details.png', titleKey: 'sc_mobile_details' }
+    { src: 'img/screenshots/mobile_home.png', titleKey: 'sc_home' },
+    { src: 'img/screenshots/mobile_Tamadex.png', titleKey: 'sc_tamadex' },
+    { src: 'img/screenshots/mobile_selecao.png', titleKey: 'sc_selecao' },
+    { src: 'img/screenshots/mobile_Statcard.png', titleKey: 'sc_statcard' },
+    { src: 'img/screenshots/mobile_pupilo.png', titleKey: 'sc_pupilo' },
+    { src: 'img/screenshots/mobile_details.png', titleKey: 'sc_details' }
   ],
   wear: [
-    { src: 'img/screenshots/wear_home.png', titleKey: 'sc_wear_home' },
-    { src: 'img/screenshots/wear_pupilo.png', titleKey: 'sc_wear_pupilo' },
-    { src: 'img/screenshots/wear_tamadex.png', titleKey: 'sc_wear_tamadex' },
-    { src: 'img/screenshots/wear_selecao.png', titleKey: 'sc_wear_selecao' },
-    { src: 'img/screenshots/wear_Statcard.png', titleKey: 'sc_wear_statcard' },
-    { src: 'img/screenshots/wear_details.png', titleKey: 'sc_wear_details' }
+    { src: 'img/screenshots/wear_home.png', titleKey: 'sc_home' },
+    { src: 'img/screenshots/wear_tamadex.png', titleKey: 'sc_tamadex' },
+    { src: 'img/screenshots/wear_selecao.png', titleKey: 'sc_selecao' },
+    { src: 'img/screenshots/wear_Statcard.png', titleKey: 'sc_statcard' },
+    { src: 'img/screenshots/wear_pupilo.png', titleKey: 'sc_pupilo' },
+    { src: 'img/screenshots/wear_details.png', titleKey: 'sc_details' }
   ]
 };
 
@@ -250,7 +247,6 @@ function updateScreenshotsView() {
 
   if (!frameContainer || !screenImg) return;
 
-  // Change device frame style
   if (currentTab === 'wear') {
     frameContainer.className = 'device-frame frame-wear';
   } else {
@@ -263,7 +259,6 @@ function updateScreenshotsView() {
     screenCaption.textContent = window.i18n ? window.i18n.t(item.titleKey) : '';
   }
 
-  // Render Thumbnails
   if (thumbsContainer) {
     thumbsContainer.innerHTML = '';
     list.forEach((sc, idx) => {
@@ -282,6 +277,7 @@ function updateScreenshotsView() {
 
 // ------------------------------------------------------------
 // 6. TamaDex Showcase (33 Curated Creatures)
+// Note: ID 89 is Pegasus (electric) and ID 90 is Kitsune (fire)
 // ------------------------------------------------------------
 const curatedCreatures = [
   { id: 3, name: "Sansão", type: "normal", rarity: "rare" },
@@ -315,8 +311,8 @@ const curatedCreatures = [
   { id: 84, name: "Eldrake", type: "dragon", rarity: "legendary" },
   { id: 86, name: "Lumicorn", type: "psychic", rarity: "legendary" },
   { id: 88, name: "Phoenixa", type: "fire", rarity: "legendary" },
-  { id: 89, name: "Kitsune", type: "fire", rarity: "legendary" },
-  { id: 90, name: "Pegasus", type: "electric", rarity: "legendary" }
+  { id: 89, name: "Pegasus", type: "electric", rarity: "legendary" },
+  { id: 90, name: "Kitsune", type: "fire", rarity: "legendary" }
 ];
 
 let activeFilter = 'all';
@@ -377,12 +373,11 @@ function renderTamaDex() {
 }
 
 // ------------------------------------------------------------
-// 7. Custom Pets Showcase (7 Real Pet Evolutionary Lines)
+// 7. Custom Pets Showcase (All 7 are cats!)
 // ------------------------------------------------------------
 const realPetsData = [
   {
     name: "Barry Allen",
-    type: "Cão / Dog",
     photo: "img/custom-pets/barry_allen.jpg",
     stages: [
       { id: 22, name: "Baby", stageKey: "custom_stage_baby" },
@@ -392,7 +387,6 @@ const realPetsData = [
   },
   {
     name: "Mingau",
-    type: "Gato / Cat",
     photo: "img/custom-pets/mingau.jpeg",
     stages: [
       { id: 25, name: "Snowi", stageKey: "custom_stage_baby" },
@@ -402,7 +396,6 @@ const realPetsData = [
   },
   {
     name: "Zara",
-    type: "Gata / Cat",
     photo: "img/custom-pets/zara.jpeg",
     stages: [
       { id: 28, name: "Zaza", stageKey: "custom_stage_baby" },
@@ -412,7 +405,6 @@ const realPetsData = [
   },
   {
     name: "Zelda",
-    type: "Gata / Cat",
     photo: "img/custom-pets/zelda.jpeg",
     stages: [
       { id: 31, name: "Zeze", stageKey: "custom_stage_baby" },
@@ -422,7 +414,6 @@ const realPetsData = [
   },
   {
     name: "Didi",
-    type: "Cão / Dog",
     photo: "img/custom-pets/didi.jpeg",
     stages: [
       { id: 34, name: "Lady", stageKey: "custom_stage_baby" },
@@ -432,7 +423,6 @@ const realPetsData = [
   },
   {
     name: "Simba",
-    type: "Gato / Cat",
     photo: "img/custom-pets/simba.jpeg",
     stages: [
       { id: 37, name: "Amber", stageKey: "custom_stage_baby" },
@@ -442,7 +432,6 @@ const realPetsData = [
   },
   {
     name: "Banana",
-    type: "Cão / Dog",
     photo: "img/custom-pets/banana.jpeg",
     stages: [
       { id: 40, name: "Nana", stageKey: "custom_stage_baby" },
@@ -463,7 +452,6 @@ function renderCustomPets() {
   const detailContainer = document.getElementById('customPetDetail');
   if (!navContainer || !detailContainer) return;
 
-  // Render Tabs / Avatars
   navContainer.innerHTML = '';
   realPetsData.forEach((pet, idx) => {
     const tab = document.createElement('button');
@@ -479,19 +467,19 @@ function renderCustomPets() {
     navContainer.appendChild(tab);
   });
 
-  // Render Selected Pet Showcase
   const currentPet = realPetsData[selectedPetIdx];
   const stageBabyTitle = window.i18n ? window.i18n.t('custom_stage_baby') : '1st Stage (Baby)';
   const stageMidTitle = window.i18n ? window.i18n.t('custom_stage_mid') : '2nd Stage (Teen)';
   const stageFinalTitle = window.i18n ? window.i18n.t('custom_stage_final') : 'Final Form (Real)';
   const realPhotoTitle = window.i18n ? window.i18n.t('custom_real_photo') : 'Real Photo';
   const pixelArtTitle = window.i18n ? window.i18n.t('custom_pixel_art') : 'Pixel Art';
+  const catTag = window.i18n ? window.i18n.t('custom_pet_cat_tag') : 'Cat';
 
   detailContainer.innerHTML = `
     <div class="custom-showcase-card">
       <div class="showcase-header">
         <h3 class="showcase-pet-name">${currentPet.name}</h3>
-        <span class="showcase-pet-tag">⭐ ${currentPet.type}</span>
+        <span class="showcase-pet-tag">🐱 ${catTag}</span>
       </div>
 
       <div class="showcase-grid">
@@ -563,14 +551,12 @@ function setupPackInteractions() {
   if (!copyBtn) return;
 
   copyBtn.addEventListener('click', async () => {
-    // Generate absolute direct download URL
     const packUrl = new URL('downloads/gen1.tamapack', window.location.href).href;
     
     try {
       await navigator.clipboard.writeText(packUrl);
       showToast(window.i18n ? window.i18n.t('toast_url_copied') : 'URL copied to clipboard!');
     } catch (e) {
-      // Fallback
       const input = document.createElement('input');
       input.value = packUrl;
       document.body.appendChild(input);
@@ -599,7 +585,7 @@ function showToast(message) {
 }
 
 // ------------------------------------------------------------
-// 9. Scroll Reveal Animations (Intersection Observer)
+// 9. Scroll Reveal Animations
 // ------------------------------------------------------------
 function setupScrollAnimations() {
   const elements = document.querySelectorAll('.reveal-on-scroll');
