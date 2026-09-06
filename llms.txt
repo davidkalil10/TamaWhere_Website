@@ -1,0 +1,26 @@
+# TamaWhere — Virtual Pet Engine for Wear OS and Android
+
+> TamaWhere is a living virtual pet game and engine built specifically for Wear OS smartwatches and Android smartphones, featuring 90s-inspired nostalgic pixel art, real-time care mechanics, interactive minigames, deep evolutionary paths, and community modding support.
+
+## Overview
+- **Name**: TamaWhere
+- **Category**: Virtual Pet / Tamagotchi / Simulation Game
+- **Platforms**: Wear OS (Smartwatches) and Android (Smartphones & Tablets)
+- **Developer**: David Kalil Braga
+- **Official Website**: https://tamawhere.netlify.app/
+- **Google Play Store**: https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere
+- **Business Model**: Free to play, Zero Pay-to-Win, 100% Moddable
+
+## Key Features
+1. **Wear OS & Mobile Synchronization**: Play directly on the round watch face with tiles, complications, and quick swipe controls, or continue on your phone for full stats and complete TamaDex management.
+2. **Real-Time Care Mechanics**: Feed delicious treats, bathe, clean messes, heal illnesses, and monitor hunger, mood, energy, and weight in real time.
+3. **Interactive Minigames**: Play Rock-Paper-Scissors, train strength, or chase the fleeing ball to earn XP and level up.
+4. **Deep Evolution System**: 151+ creatures in the base community pack with branching growth stages from cute babies to powerful and legendary forms (e.g., Kitsune, Pegasus, Phoenixa).
+5. **Open Engine & Modding (TamaPacks)**: TamaWhere is an open platform. The community can build entire universes using custom pixel art sprites (64x64, 80x80, 96x96), custom sound effects, and JSON rules.
+6. **Custom Pet Commission Service**: Players can turn their real-life pets (such as cats and dogs) into playable companions with hand-drawn 3-stage pixel art evolutions.
+
+## Official Downloads
+- **Generation 1 Community Pack**: https://tamawhere.netlify.app/downloads/gen1.tamapack (151 creatures, ~12.8 MB, full audio & animations).
+
+## Contact & Creator Inquiries
+- **Email**: davidkalil@outlook.com

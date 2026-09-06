@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://tamawhere.netlify.app/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://tamawhere.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://tamawhere.netlify.app/" />
+    <image:image>
+      <image:loc>https://tamawhere.netlify.app/img/banners/banner_pt.png</image:loc>
+      <image:title>TamaWhere - Seu Pet. Sua Aventura. Sempre com Você!</image:title>
+      <image:caption>O primeiro jogo de bichinho virtual para Wear OS e Android</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tamawhere.netlify.app/img/icons/icon_app_512.png</image:loc>
+      <image:title>TamaWhere Logo Icon</image:title>
+    </image:image>
+  </url>
+</urlset>

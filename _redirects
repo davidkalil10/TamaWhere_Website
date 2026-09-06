@@ -1,2 +1,8 @@
-# Netlify Redirects
-/*    /index.html   200
+# Explicit routes for search engines, verification, and AI bots
+/google6eba736a5cfd4529.html   /google6eba736a5cfd4529.html   200
+/robots.txt                    /robots.txt                    200
+/sitemap.xml                   /sitemap.xml                   200
+/llms.txt                      /llms.txt                      200
+
+# SPA fallback
+/*                             /index.html                    200
