@@ -1605,12 +1605,7 @@ h1, h2, h3, h4 {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  .evo-stages-flow {
-    flex-direction: column;
-  }
-  .evo-arrow {
-    transform: rotate(90deg);
-  }
+
 
 }
 
@@ -1870,6 +1865,178 @@ h1, h2, h3, h4 {
    Mobile Responsiveness for Store Buttons & Platforms
    ============================================================ */
 @media (max-width: 768px) {
+  /* ============================================================
+     Custom Pet Mobile Optimization
+     ============================================================ */
+  .custom-pet-section {
+    padding: 3.5rem 0 !important;
+  }
+
+  .custom-pet-wrapper {
+    padding: 1.5rem 0.75rem !important;
+    margin: 0 !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .custom-badge-vip {
+    font-size: 0.65rem !important;
+    padding: 0.35rem 0.85rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* Horizontal scrolling pet tabs with momentum & snap */
+  .custom-pet-tabs {
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-padding: 0 1rem !important;
+    padding: 0.5rem 0.75rem 1rem 0.75rem !important;
+    gap: 0.65rem !important;
+    scrollbar-width: none !important;
+  }
+  .custom-pet-tabs::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .custom-pet-tab {
+    flex: 0 0 auto !important;
+    min-width: 78px !important;
+    max-width: 86px !important;
+    padding: 0.55rem 0.4rem !important;
+    scroll-snap-align: center !important;
+    border-radius: var(--radius-sm) !important;
+  }
+
+  .tab-photo {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .tab-name {
+    font-size: 0.72rem !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* Inner showcase card: reduce huge wasted padding */
+  .custom-showcase-card {
+    padding: 1.25rem 0.65rem !important;
+    margin-top: 1rem !important;
+    border-radius: var(--radius-sm) !important;
+  }
+
+  .showcase-header {
+    margin-bottom: 1.25rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .showcase-pet-name {
+    font-size: 1.4rem !important;
+  }
+
+  .showcase-pet-tag {
+    font-size: 0.85rem !important;
+  }
+
+  .showcase-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    text-align: center !important;
+  }
+
+  /* Centered Real Photo */
+  .photo-frame {
+    width: 185px !important;
+    height: 185px !important;
+    margin: 0 auto 0.5rem auto !important;
+    border-radius: 12px !important;
+  }
+
+  .photo-caption {
+    font-size: 0.82rem !important;
+  }
+
+  /* Evolution Line: Clean 3-Stage Horizontal Row (Baby ➔ Mid ➔ Final) */
+  .evolution-line-card {
+    margin-top: 0.5rem !important;
+    text-align: center !important;
+  }
+
+  .evo-stages-flow {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    padding: 1rem 0.35rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    border-radius: var(--radius-sm) !important;
+  }
+
+  .evo-stage {
+    flex: 1 1 0 !important;
+    max-width: 90px !important;
+    min-width: 65px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .stage-label {
+    font-size: 0.6rem !important;
+    margin-bottom: 0.35rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .evo-sprite-box {
+    width: 66px !important;
+    height: 66px !important;
+    margin: 0 auto 0.35rem auto !important;
+    border-radius: 8px !important;
+  }
+
+  .evo-sprite-box img {
+    max-width: 50px !important;
+    max-height: 50px !important;
+    object-fit: contain !important;
+  }
+
+  .stage-name {
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .evo-arrow {
+    transform: none !important;
+    font-size: 0.85rem !important;
+    color: var(--color-accent) !important;
+    flex-shrink: 0 !important;
+    margin: 0 0.15rem !important;
+    display: inline-block !important;
+  }
+
+  .custom-cta-card {
+    padding: 1.5rem 1rem !important;
+    margin-top: 1.5rem !important;
+    border-radius: var(--radius-md) !important;
+  }
+  .btn-gold {
+    font-size: 0.88rem !important;
+    padding: 0.75rem 1.25rem !important;
+  }
+
   .hero-badge {
     font-size: 0.62rem;
     line-height: 1.5;

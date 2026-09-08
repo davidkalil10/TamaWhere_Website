@@ -460,9 +460,15 @@ function renderCustomPets() {
       <img src="${pet.photo}" alt="${pet.name}" class="tab-photo" loading="lazy" />
       <span class="tab-name">${pet.name}</span>
     `;
-    tab.addEventListener('click', () => {
+    tab.addEventListener('click', (e) => {
       selectedPetIdx = idx;
       renderCustomPets();
+      setTimeout(() => {
+        const activeTab = document.querySelector('.custom-pet-tab.active');
+        if (activeTab) {
+          activeTab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+      }, 50);
     });
     navContainer.appendChild(tab);
   });
