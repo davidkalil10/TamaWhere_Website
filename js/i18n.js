@@ -30,7 +30,7 @@ const translations = {
     hero_store_play_sub: "Wear OS & Celular",
     hero_store_play_title: "Google Play",
     hero_store_play_tag: "Em Publicação",
-    stat_creatures: "151+ Criaturas",
+    stat_creatures: "Criaturas",
     stat_moddable: "100% Modificável",
     stat_devices: "PC, Quest, Watch & Fone",
     // Platforms Showcase
@@ -209,7 +209,7 @@ const translations = {
     hero_store_play_sub: "Wear OS & Mobile",
     hero_store_play_title: "Google Play",
     hero_store_play_tag: "In Review",
-    stat_creatures: "151+ Creatures",
+    stat_creatures: "Creatures",
     stat_moddable: "100% Moddable",
     stat_devices: "PC, Quest, Watch & Phone",
     // Platforms Showcase
