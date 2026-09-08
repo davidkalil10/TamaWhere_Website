@@ -44,6 +44,8 @@ Com uma engine aberta e modular, o jogo traz de volta a nostalgia clássica dos 
 - 🍖 **Cuidado em Tempo Real**: Alimente, dê banho, limpe a sujeira e monitore status de fome, energia, humor e peso.
 - 🎮 **Minigames**: Jogue Pedra-Papel-Tesoura, treine força ou persiga a bola em fuga para subir de nível e ganhar experiência.
 - ✨ **Linhas Evolutivas**: Seu estilo de cuidado dita o rumo do crescimento do seu companheiro.
+- 🪟 **Desktop Windows Completo**: Jogue com atalhos de teclado ágeis, modo carcaça retrô ou janela compacta (`F2`), minimização na bandeja (`Tray`) e notificações nativas.
+- 🥽 **Meta Quest VR & MR**: Interaja com seu pet em um **painel espacial flutuante 2D** no Horizon OS com controle por ponteiros ou Hand Tracking em VR ou Passthrough.
 - ⌚ **Wear OS Imersivo**: Interaja direto no mostrador redondo do relógio inteligente com tiles, complicações e toques táteis rápidos.
 - 📦 **Engine Aberta (TamaPacks)**: Qualquer pessoa da comunidade pode criar seus próprios universos, sprites e sons em pacotes `.tamapack`.
 - 🐱 **Bichinhos Reais no Jogo**: Serviço exclusivo que imortaliza animais de estimação reais em pixel art artesanal de 3 estágios.
@@ -158,9 +160,12 @@ Oferecemos serviço de comissão sob medida:
 
 ## 🔗 Links Oficiais
 
-- 📲 **Google Play Store**: [Baixe o TamaWhere](https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere)
+- 🪟 **Microsoft Store (Windows)**: [Baixe o TamaWhere na Microsoft Store](https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR) *(Disponível)*
+- 🥽 **Meta Horizon Store (Meta Quest)**: [Visualizar no Meta Quest](https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/) *(Em processo de publicação)*
+- 📲 **Google Play Store (Android & Wear OS)**: [Baixe o TamaWhere no Google Play](https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere) *(Em processo de publicação)*
+- 🌐 **Website Oficial**: [tamawhere.netlify.app](https://tamawhere.netlify.app/)
 - 🔒 **Política de Privacidade**: [Visualizar Documento](https://drive.google.com/file/d/1L6vecvDLhHIdrcVIpfXwREDzxlfBBZ7p/view)
-- ✉️ **Contato**: [davidkalil@outlook.com](mailto:davidkalil@outlook.com)
+- ✉️ **Contato & Suporte**: [davidkalil@outlook.com](mailto:davidkalil@outlook.com)
 
 ---
 
