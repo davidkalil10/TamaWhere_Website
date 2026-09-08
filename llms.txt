@@ -1,14 +1,21 @@
-# TamaWhere — Virtual Pet Engine for Wear OS and Android
+# TamaWhere — Universal Virtual Pet Engine for Wear OS, Android, Windows & Meta Quest
 
-> TamaWhere is a living virtual pet game and engine built specifically for Wear OS smartwatches and Android smartphones, featuring 90s-inspired nostalgic pixel art, real-time care mechanics, interactive minigames, deep evolutionary paths, and community modding support.
+> TamaWhere is a living virtual pet game and cross-platform engine built for Wear OS smartwatches, Android smartphones, Windows PC, and Meta Quest VR headsets. Featuring 90s-inspired nostalgic pixel art, real-time care mechanics, interactive minigames, deep evolutionary paths, and community modding support.
 
 ## Overview
 - **Name**: TamaWhere
 - **Category**: Virtual Pet / Tamagotchi / Simulation Game
-- **Platforms**: Wear OS (Smartwatches) and Android (Smartphones & Tablets)
+- **Platforms**:
+  - Windows PC (Steam & Microsoft Store)
+  - Meta Quest (Quest 2, 3, 3S, Pro — Horizon OS spatial floating 2D panel)
+  - Wear OS (Smartwatches)
+  - Android (Smartphones & Tablets)
 - **Developer**: David Kalil Braga
 - **Official Website**: https://tamawhere.netlify.app/
-- **Google Play Store**: https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere
+- **Official Stores**:
+  - Microsoft Store (Windows): https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR (Live)
+  - Meta Horizon Store (Quest): https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/ (In publication process)
+  - Google Play Store: https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere (In publication process)
 - **Business Model**: Free to play, Zero Pay-to-Win, 100% Moddable
 
 ## Key Features

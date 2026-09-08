@@ -12,10 +12,16 @@
   </p>
 
   <p>
-    <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" target="_blank">
-      <img src="https://img.shields.io/badge/Google_Play-Disponível_Agora-34A853?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play" />
+    <a href="https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR" target="_blank">
+      <img src="https://img.shields.io/badge/Microsoft_Store-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Microsoft Store" />
     </a>
-    <img src="https://img.shields.io/badge/Plataformas-Wear_OS_%7C_Android-00d2ff?style=for-the-badge&logo=android&logoColor=white" alt="Wear OS & Android" />
+    <a href="https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/" target="_blank">
+      <img src="https://img.shields.io/badge/Meta_Quest-Horizon_Store-0082FB?style=for-the-badge&logo=meta&logoColor=white" alt="Meta Quest" />
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" target="_blank">
+      <img src="https://img.shields.io/badge/Google_Play-Android_%26_WearOS-34A853?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play" />
+    </a>
+    <img src="https://img.shields.io/badge/Plataformas-Windows_%7C_Quest_%7C_WearOS_%7C_Android-00d2ff?style=for-the-badge" alt="Multiplataforma" />
     <img src="https://img.shields.io/badge/Idiomas-PT--BR_%7C_EN-ffd166?style=for-the-badge" alt="Bilingual" />
     <img src="https://img.shields.io/badge/Status-Online_no_Netlify-00e676?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify" />
   </p>
@@ -31,7 +37,7 @@
 
 ## 🎮 Sobre o TamaWhere
 
-O **TamaWhere** é o primeiro jogo de bichinho virtual (Virtual Pet) desenhado especificamente para funcionar de forma integrada entre o seu **Smartwatch (Wear OS)** e o seu **Smartphone (Android)**.
+O **TamaWhere** é o primeiro jogo de bichinho virtual (Virtual Pet) universal desenvolvido para funcionar de forma integrada entre o seu **Desktop Windows (Microsoft Store & Steam)**, **Meta Quest (painel 2D flutuante no Horizon OS)**, **Smartwatch (Wear OS)** e **Smartphone (Android)**.
 
 Com uma engine aberta e modular, o jogo traz de volta a nostalgia clássica dos anos 90 combinada com as tecnologias mais modernas de vestíveis:
 

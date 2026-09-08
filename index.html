@@ -6,14 +6,14 @@
     <!-- Canonical & Verification -->
   <link rel="canonical" href="https://tamawhere.netlify.app/" />
   <meta name="google-site-verification" content="google6eba736a5cfd4529" />
-  <title>TamaWhere — O Seu Bichinho Virtual no Pulso e no Celular</title>
+  <title>TamaWhere — Seu Bichinho Virtual no Pulso, Celular, Windows e Meta Quest</title>
   
   <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="O primeiro Virtual Pet para Wear OS e Android. Cuide, alimente, brinque, evolua e crie seus próprios TamaPacks em pixel art nostálgica." />
+  <meta name="description" content="O primeiro Virtual Pet universal para Wear OS, Android, Windows PC e Meta Quest. Cuide, alimente, brinque, evolua e crie seus próprios TamaPacks em pixel art nostálgica." />
   <meta name="keywords" content="TamaWhere, Virtual Pet, Wear OS, Android, Smartwatch, Bichinho Virtual, Pixel Art, Retro Games" />
   <meta name="author" content="David Kalil Braga" />
   <meta property="og:title" content="TamaWhere — Seu Pet. Sua Aventura. Sempre com Você!" />
-  <meta property="og:description" content="Engine viva de bichinhos virtuais para Wear OS e smartphone. 151+ criaturas, suporte a mods comunitários e personalização de pets reais." />
+  <meta property="og:description" content="Engine viva de bichinhos virtuais para Wear OS, Android, Windows e Meta Quest. 151+ criaturas, suporte a mods comunitários e personalização de pets reais." />
   <meta property="og:image" content="img/banners/banner_pt.png" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -44,26 +44,45 @@
         "inLanguage": ["pt-BR", "en"]
       },
       {
-        "@type": ["VideoGame", "MobileApplication"],
+        "@type": ["VideoGame", "MobileApplication", "SoftwareApplication"],
         "@id": "https://tamawhere.netlify.app/#game",
         "name": "TamaWhere",
         "url": "https://tamawhere.netlify.app/",
-        "operatingSystem": "Android, Wear OS",
+        "operatingSystem": "Android, Wear OS, Windows 10/11, Meta Quest Horizon OS",
         "applicationCategory": "GameApplication",
         "genre": ["Virtual Pet", "Simulation", "Retro", "Pixel Art"],
-        "description": "Uma engine viva de bichinhos virtuais com pixel art nostálgica, sistema profundo de evolução, minigames e sincronização total entre Wear OS e Android.",
+        "description": "Uma engine viva de bichinhos virtuais com pixel art nostálgica, sistema profundo de evolução, minigames e compatibilidade universal: Wear OS, Android, Windows PC e Meta Quest.",
         "author": {
           "@type": "Person",
           "name": "David Kalil Braga",
           "email": "davidkalil@outlook.com"
         },
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        },
-        "downloadUrl": "https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Microsoft Store (Windows)",
+            "url": "https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Meta Horizon Store (Meta Quest)",
+            "url": "https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/PreOrder"
+          },
+          {
+            "@type": "Offer",
+            "name": "Google Play (Android & Wear OS)",
+            "url": "https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/PreOrder"
+          }
+        ],
         "image": "https://tamawhere.netlify.app/img/banners/banner_pt.png"
       },
       {
@@ -126,6 +145,7 @@
       <!-- Desktop & Mobile Nav Links -->
       <ul class="nav-links" id="navLinks">
         <li><a href="#features" data-i18n="nav_features">Recursos</a></li>
+        <li><a href="#platforms" data-i18n="nav_platforms">Onde Jogar</a></li>
         <li><a href="#screenshots" data-i18n="nav_screenshots">Telas</a></li>
         <li><a href="#tamadex" data-i18n="nav_creatures">TamaDex</a></li>
         <li><a href="#custom-pet" data-i18n="nav_custom_pet">Pet Real no Jogo</a></li>
@@ -141,9 +161,7 @@
         </button>
 
         <!-- CTA Direct Store Link -->
-        <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" 
-           target="_blank" 
-           rel="noopener noreferrer" 
+        <a href="#platforms" 
            class="nav-cta-btn"
            data-i18n="nav_download_app">
           Baixar o Jogo
@@ -176,17 +194,65 @@
             Uma engine viva de bichinhos virtuais com pixel art nostálgica, sistema profundo de evolução, minigames e sincronização total entre Wear OS e Android.
           </p>
 
-          <div class="hero-actions">
+          <div class="hero-stores-grid">
+            <!-- Microsoft Store Button -->
+            <a href="https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-store-card store-windows">
+              <div class="store-icon-box">
+                <svg width="20" height="20" viewBox="0 0 88 88" fill="currentColor">
+                  <path d="M0 12.402l35.689-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.016 46.134zm4.326-39.04L87.314 0v41.527l-47.318.376zm47.329 45.47v41.543l-47.329-6.699-.044-34.454z"/>
+                </svg>
+              </div>
+              <div class="store-info">
+                <span class="store-sub" data-i18n="hero_store_windows_sub">Download Oficial</span>
+                <div class="store-title-row">
+                  <span class="store-name" data-i18n="hero_store_windows_title">Microsoft Store</span>
+                  <span class="store-tag tag-live" data-i18n="hero_store_windows_tag">Live</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Meta Quest Button -->
+            <a href="https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-store-card store-meta">
+              <div class="store-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 7H3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4.5l1.5 2h6l1.5-2H21a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm-14 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm10 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                </svg>
+              </div>
+              <div class="store-info">
+                <span class="store-sub" data-i18n="hero_store_meta_sub">Painel 2D Flutuante</span>
+                <div class="store-title-row">
+                  <span class="store-name" data-i18n="hero_store_meta_title">Meta Quest</span>
+                  <span class="store-tag tag-review" data-i18n="hero_store_meta_tag">Em Publicação</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Google Play Button -->
             <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" 
                target="_blank" 
                rel="noopener noreferrer" 
-               class="btn-primary">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3.609 1.814L13.793 12 3.61 22.186a1.99 1.99 0 0 1-.61-.926V2.74c0-.34.1-.667.609-.926zm11.603 11.604l2.429 2.428-11.83 6.83 9.401-9.258zm2.43-2.428L3.811 1.732l11.83 6.83-2.429 2.426zm1.328 1.328l2.94 1.7c.69.4.69 1.056 0 1.456l-2.94 1.7-1.89-1.928 1.89-1.928z"/>
-              </svg>
-              <span data-i18n="hero_cta_play">Disponível no Google Play</span>
+               class="btn-store-card store-play">
+              <div class="store-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3.609 1.814L13.793 12 3.61 22.186a1.99 1.99 0 0 1-.61-.926V2.74c0-.34.1-.667.609-.926zm11.603 11.604l2.429 2.428-11.83 6.83 9.401-9.258zm2.43-2.428L3.811 1.732l11.83 6.83-2.429 2.426zm1.328 1.328l2.94 1.7c.69.4.69 1.056 0 1.456l-2.94 1.7-1.89-1.928 1.89-1.928z"/>
+                </svg>
+              </div>
+              <div class="store-info">
+                <span class="store-sub" data-i18n="hero_store_play_sub">Wear OS & Celular</span>
+                <div class="store-title-row">
+                  <span class="store-name" data-i18n="hero_store_play_title">Google Play</span>
+                  <span class="store-tag tag-review" data-i18n="hero_store_play_tag">Em Publicação</span>
+                </div>
+              </div>
             </a>
 
+            <!-- Explore Dex Secondary CTA -->
             <a href="#tamadex" class="btn-secondary">
               <span data-i18n="hero_cta_dex">Conhecer Criaturas</span>
               <span>➔</span>
@@ -203,8 +269,8 @@
               <span class="stat-label" data-i18n="stat_moddable">Modificável</span>
             </div>
             <div class="stat-item">
-              <span class="stat-value">Wear OS</span>
-              <span class="stat-label" data-i18n="stat_devices">Smartwatch & Fone</span>
+              <span class="stat-value">Multi</span>
+              <span class="stat-label" data-i18n="stat_devices">PC, Quest, Watch & Fone</span>
             </div>
             <div class="stat-item">
               <span class="stat-value">0% P2W</span>
@@ -278,6 +344,107 @@
             <p class="feature-desc" data-i18n="feat_wear_desc">
               Jogue direto na tela redonda do seu smartwatch com tiles e gestos rápidos, ou abra o app no celular para gerenciar seu TamaDex e estatísticas completas.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Platforms Showcase Section (Windows, Meta Quest, Wear OS, Android)
+         ============================================================ -->
+    <section class="platforms-section" id="platforms">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="platforms_tag">ECOSSISTEMA MULTIPLATAFORMA</span>
+          <h2 class="section-title" data-i18n="platforms_title">Jogue Onde Quiser, Como Quiser</h2>
+          <p class="section-subtitle" data-i18n="platforms_subtitle">
+            O TamaWhere foi construído do zero para se adaptar com perfeição e controles sob medida a cada formato de tela e dispositivo.
+          </p>
+        </div>
+
+        <div class="platforms-grid">
+          <!-- Card 1: Windows Desktop -->
+          <div class="platform-card">
+            <div class="platform-card-header">
+              <div class="platform-icon-large">🪟</div>
+              <span class="platform-pill pill-windows" data-i18n="plat_win_badge">Microsoft Store</span>
+            </div>
+            <h3 class="platform-card-title" data-i18n="plat_win_title">Windows PC & Steam</h3>
+            <p class="platform-card-desc" data-i18n="plat_win_desc">
+              Experiência desktop completa com atalhos de teclado ágeis, modo carcaça retrô ou janela compacta (F2/Tab), minimização inteligente para a bandeja do sistema (Tray) e notificações nativas do Windows Toast.
+            </p>
+            <div class="platform-card-action">
+              <a href="https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-platform-link btn-win-accent"
+                 data-i18n="plat_win_btn">
+                Baixar na Microsoft Store
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Meta Quest -->
+          <div class="platform-card">
+            <div class="platform-card-header">
+              <div class="platform-icon-large">🥽</div>
+              <span class="platform-pill pill-meta" data-i18n="plat_quest_badge">Horizon OS</span>
+            </div>
+            <h3 class="platform-card-title" data-i18n="plat_quest_title">Meta Quest (VR & MR)</h3>
+            <p class="platform-card-desc" data-i18n="plat_quest_desc">
+              Leve seu companheiro virtual para a computação espacial! O jogo roda em um painel espacial flutuante em 2D dentro do Meta Quest (2, 3, 3S e Pro), jogável em VR ou no Passthrough colorido (Mixed Reality) com suporte a ponteiros de controle e Hand Tracking.
+            </p>
+            <div class="platform-card-action">
+              <a href="https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-platform-link btn-meta-accent"
+                 data-i18n="plat_quest_btn">
+                Ver no Meta Horizon Store
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Wear OS -->
+          <div class="platform-card">
+            <div class="platform-card-header">
+              <div class="platform-icon-large">⌚</div>
+              <span class="platform-pill pill-wear" data-i18n="plat_wear_badge">Wearable</span>
+            </div>
+            <h3 class="platform-card-title" data-i18n="plat_wear_title">Smartwatches (Wear OS)</h3>
+            <p class="platform-card-desc" data-i18n="plat_wear_desc">
+              O espírito clássico do Tamagotchi no seu pulso. Cuide, alimente e brinque em segundos através de tiles interativos no relógio, toques rápidos e notificações táteis inteligentes.
+            </p>
+            <div class="platform-card-action">
+              <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-platform-link btn-play-accent"
+                 data-i18n="plat_wear_btn">
+                Ver no Google Play
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Android Smartphone -->
+          <div class="platform-card">
+            <div class="platform-card-header">
+              <div class="platform-icon-large">📱</div>
+              <span class="platform-pill pill-mobile" data-i18n="plat_mobile_badge">Mobile</span>
+            </div>
+            <h3 class="platform-card-title" data-i18n="plat_mobile_title">Smartphones (Android)</h3>
+            <p class="platform-card-desc" data-i18n="plat_mobile_desc">
+              Gerenciamento completo na palma da mão. Explore o TamaDex com fichas detalhadas, importe novos pacotes comunitários (.tamapack) e sincronize seus saves no Google Drive com 1 toque.
+            </p>
+            <div class="platform-card-action">
+              <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-platform-link btn-play-accent"
+                 data-i18n="plat_mobile_btn">
+                Ver no Google Play
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -573,11 +740,27 @@
               </a>
             </li>
             <li>
+              <a href="https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 data-i18n="footer_store_windows">
+                Microsoft Store (Windows)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 data-i18n="footer_store_meta">
+                Meta Quest (Horizon Store)
+              </a>
+            </li>
+            <li>
               <a href="https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere" 
                  target="_blank" 
                  rel="noopener noreferrer" 
                  data-i18n="footer_play_store">
-                Google Play Store
+                Google Play (Wear OS & Mobile)
               </a>
             </li>
           </ul>
