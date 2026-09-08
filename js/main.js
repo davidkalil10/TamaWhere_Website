@@ -464,9 +464,14 @@ function renderCustomPets() {
       selectedPetIdx = idx;
       renderCustomPets();
       setTimeout(() => {
-        const activeTab = document.querySelector('.custom-pet-tab.active');
-        if (activeTab) {
-          activeTab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        const container = document.getElementById('customPetTabs');
+        const activeTab = container ? container.querySelector('.custom-pet-tab.active') : null;
+        if (container && activeTab) {
+          const targetLeft = activeTab.offsetLeft - (container.clientWidth / 2) + (activeTab.clientWidth / 2);
+          container.scrollTo({
+            left: targetLeft,
+            behavior: 'smooth'
+          });
         }
       }, 50);
     });
