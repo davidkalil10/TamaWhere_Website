@@ -1611,6 +1611,7 @@ h1, h2, h3, h4 {
   .evo-arrow {
     transform: rotate(90deg);
   }
+
 }
 
 
@@ -1863,4 +1864,84 @@ h1, h2, h3, h4 {
   background: #2e7d32;
   border-color: #2e7d32;
   box-shadow: 0 0 15px rgba(52, 168, 83, 0.5);
+}
+
+/* ============================================================
+   Mobile Responsiveness for Store Buttons & Platforms
+   ============================================================ */
+@media (max-width: 768px) {
+  .hero-badge {
+    font-size: 0.62rem;
+    line-height: 1.5;
+    padding: 0.45rem 0.85rem;
+    white-space: normal;
+    text-align: center;
+    display: inline-flex;
+  }
+
+  .hero-stores-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .btn-store-card {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 0.85rem 1.15rem !important;
+    box-sizing: border-box !important;
+    border-radius: var(--radius-md) !important;
+    text-decoration: none !important;
+  }
+
+  .store-info {
+    flex-grow: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .store-title-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 0.5rem !important;
+  }
+
+  .store-name {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+  }
+
+  .store-tag {
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  .hero-stores-grid .btn-secondary {
+    width: 100% !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    padding: 0.85rem !important;
+    margin-top: 0.25rem !important;
+  }
+
+  .platforms-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .platform-card {
+    padding: 1.5rem 1.25rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .btn-platform-link {
+    padding: 0.85rem !important;
+    box-sizing: border-box !important;
+  }
 }

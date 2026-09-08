@@ -16,7 +16,7 @@ const translations = {
     nav_download_app: "Baixar o Jogo",
 
     // Hero
-    hero_badge: "🎮 DISPONÍVEL PARA WEAR OS, ANDROID, WINDOWS E META QUEST",
+    hero_badge: "🎮 DISPONIVEL PARA WEAR OS, ANDROID, WINDOWS E META QUEST",
     hero_title: "Seu Pet. Sua Aventura. Sempre com Você!",
     hero_desc: "Uma engine viva de bichinhos virtuais com pixel art nostálgica, sistema profundo de evolução, minigames e suporte universal: no seu smartwatch, celular, PC Windows e Meta Quest.",
     hero_cta_play: "Disponível no Google Play",
