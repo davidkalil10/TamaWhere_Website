@@ -14,7 +14,7 @@
 - **Official Website**: https://tamawhere.netlify.app/
 - **Official Stores**:
   - Microsoft Store (Windows): https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR (Live)
-  - Meta Horizon Store (Quest): https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/ (In publication process)
+  - Meta Horizon Store (Quest): https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/ (Live)
   - Google Play Store: https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere (In publication process)
 - **Business Model**: Free to play, Zero Pay-to-Win, 100% Moddable
 

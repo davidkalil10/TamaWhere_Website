@@ -161,7 +161,7 @@ Oferecemos serviço de comissão sob medida:
 ## 🔗 Links Oficiais
 
 - 🪟 **Microsoft Store (Windows)**: [Baixe o TamaWhere na Microsoft Store](https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR) *(Disponível)*
-- 🥽 **Meta Horizon Store (Meta Quest)**: [Visualizar no Meta Quest](https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/) *(Em processo de publicação)*
+- 🥽 **Meta Horizon Store (Meta Quest)**: [Visualizar no Meta Quest](https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/) *(Disponível)*
 - 📲 **Google Play Store (Android & Wear OS)**: [Baixe o TamaWhere no Google Play](https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere) *(Em processo de publicação)*
 - 🌐 **Website Oficial**: [tamawhere.netlify.app](https://tamawhere.netlify.app/)
 - 🔒 **Política de Privacidade**: [Visualizar Documento](https://drive.google.com/file/d/1L6vecvDLhHIdrcVIpfXwREDzxlfBBZ7p/view)
