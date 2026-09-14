@@ -2,7 +2,7 @@
     "packId": "community_pack",
     "packName": "Community Pack TamaPets",
     "author": "David Kalil Braga",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "description": "All the official custom made TamaPets for TamaWhere.",
     "dexName": "TamaDex",
     "petTerm": "TamaPet"
