@@ -1648,6 +1648,14 @@ h1, h2, h3, h4 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
+.btn-store-card.store-steam {
+  border-color: rgba(102, 192, 244, 0.45);
+}
+.btn-store-card.store-steam:hover {
+  border-color: #66c0f4;
+  box-shadow: 0 8px 25px rgba(102, 192, 244, 0.45);
+}
+
 .btn-store-card.store-windows {
   border-color: rgba(0, 120, 212, 0.45);
 }
@@ -1683,6 +1691,7 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
 }
 
+.store-steam .store-icon-box { color: #66c0f4; }
 .store-windows .store-icon-box { color: #00a4ef; }
 .store-meta .store-icon-box { color: #0082fb; }
 .store-play .store-icon-box { color: #00e676; }
@@ -1814,6 +1823,9 @@ h1, h2, h3, h4 {
 
 .platform-card-action {
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .btn-platform-link {
@@ -1836,6 +1848,16 @@ h1, h2, h3, h4 {
 .btn-platform-link:hover {
   background: rgba(255, 255, 255, 0.18);
   transform: translateY(-2px);
+}
+
+.btn-platform-link.btn-steam-accent {
+  border-color: rgba(102, 192, 244, 0.5);
+  background: rgba(27, 40, 56, 0.7);
+}
+.btn-platform-link.btn-steam-accent:hover {
+  background: #1b2838;
+  border-color: #66c0f4;
+  box-shadow: 0 0 15px rgba(102, 192, 244, 0.5);
 }
 
 .btn-platform-link.btn-win-accent {

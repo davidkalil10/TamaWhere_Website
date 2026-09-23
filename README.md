@@ -12,6 +12,9 @@
   </p>
 
   <p>
+    <a href="https://store.steampowered.com/app/5233230/TamaWhere/" target="_blank">
+      <img src="https://img.shields.io/badge/Steam-Windows_PC-171a21?style=for-the-badge&logo=steam&logoColor=white" alt="Steam" />
+    </a>
     <a href="https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR" target="_blank">
       <img src="https://img.shields.io/badge/Microsoft_Store-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Microsoft Store" />
     </a>
@@ -160,6 +163,7 @@ Oferecemos serviço de comissão sob medida:
 
 ## 🔗 Links Oficiais
 
+- 🎮 **Steam (PC)**: [Baixe o TamaWhere na Steam](https://store.steampowered.com/app/5233230/TamaWhere/) *(Disponível)*
 - 🪟 **Microsoft Store (Windows)**: [Baixe o TamaWhere na Microsoft Store](https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR) *(Disponível)*
 - 🥽 **Meta Horizon Store (Meta Quest)**: [Visualizar no Meta Quest](https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/) *(Disponível)*
 - 📲 **Google Play Store (Android & Wear OS)**: [Baixe o TamaWhere no Google Play](https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere) *(Em processo de publicação)*

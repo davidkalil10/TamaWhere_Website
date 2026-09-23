@@ -13,6 +13,7 @@
 - **Developer**: David Kalil Braga
 - **Official Website**: https://tamawhere.netlify.app/
 - **Official Stores**:
+  - Steam (Windows PC): https://store.steampowered.com/app/5233230/TamaWhere/ (Live)
   - Microsoft Store (Windows): https://apps.microsoft.com/detail/9mxcjn23mzp7?hl=pt-BR&gl=BR (Live)
   - Meta Horizon Store (Quest): https://www.meta.com/pt-br/experiences/tamawhere/1620772423042196/ (Live)
   - Google Play Store: https://play.google.com/store/apps/details?id=com.xxfalcoonx.tamawhere (In publication process)
