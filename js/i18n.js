@@ -16,7 +16,7 @@ const translations = {
     nav_download_app: "Baixar o Jogo",
 
     // Hero
-    hero_badge: "🎮 DISPONÍVEL NA STEAM, WINDOWS, META QUEST E WEAR OS",
+    hero_badge: "🎮 DISPONÍVEL NA STEAM, WINDOWS, META QUEST E GOOGLE PLAY",
     hero_title: "Seu Pet. Sua Aventura. Sempre com Você!",
     hero_desc: "Uma engine viva de bichinhos virtuais com pixel art nostálgica, sistema profundo de evolução, minigames e suporte universal: no seu smartwatch, celular, PC Windows e Meta Quest.",
     hero_cta_play: "Disponível no Google Play",
@@ -32,7 +32,7 @@ const translations = {
     hero_store_meta_tag: "Live",
     hero_store_play_sub: "Wear OS & Celular",
     hero_store_play_title: "Google Play",
-    hero_store_play_tag: "Em Publicação",
+    hero_store_play_tag: "Live",
     stat_creatures: "Criaturas",
     stat_moddable: "100% Modificável",
     stat_devices: "PC, Quest, Watch & Fone",
@@ -55,12 +55,12 @@ const translations = {
     plat_wear_badge: "Wearable",
     plat_wear_desc: "O espírito clássico do Tamagotchi no seu pulso. Cuide, alimente e brinque em segundos através de tiles interativos no relógio, toques rápidos e notificações táteis inteligentes.",
     plat_wear_btn: "Ver no Google Play",
-    plat_wear_status: "Em processo de publicação",
+    plat_wear_status: "Disponível na Loja Oficial",
     plat_mobile_title: "Smartphones (Android)",
     plat_mobile_badge: "Mobile",
     plat_mobile_desc: "Gerenciamento completo na palma da mão. Explore o TamaDex com fichas detalhadas, importe novos pacotes comunitários (.tamapack) e sincronize seus saves no Google Drive com 1 toque.",
     plat_mobile_btn: "Ver no Google Play",
-    plat_mobile_status: "Em processo de publicação",
+    plat_mobile_status: "Disponível na Loja Oficial",
 
     stat_fair: "Zero Pay-to-Win",
 
@@ -200,7 +200,7 @@ const translations = {
     nav_download_app: "Get the Game",
 
     // Hero
-    hero_badge: "🎮 AVAILABLE ON STEAM, WINDOWS, META QUEST & WEAR OS",
+    hero_badge: "🎮 AVAILABLE ON STEAM, WINDOWS, META QUEST & GOOGLE PLAY",
     hero_title: "Your Pet. Your Adventure. Always With You!",
     hero_desc: "A living virtual pet engine featuring nostalgic pixel art, deep evolutionary paths, fun minigames, and universal support: on your smartwatch, smartphone, Windows PC, and Meta Quest.",
     hero_cta_play: "Get it on Google Play",
@@ -216,7 +216,7 @@ const translations = {
     hero_store_meta_tag: "Live",
     hero_store_play_sub: "Wear OS & Mobile",
     hero_store_play_title: "Google Play",
-    hero_store_play_tag: "In Review",
+    hero_store_play_tag: "Live",
     stat_creatures: "Creatures",
     stat_moddable: "100% Moddable",
     stat_devices: "PC, Quest, Watch & Phone",
@@ -239,12 +239,12 @@ const translations = {
     plat_wear_badge: "Wearable",
     plat_wear_desc: "The timeless Tamagotchi spirit right on your wrist. Feed, care, and play in seconds using interactive tiles, quick gestures, and smart haptic notifications.",
     plat_wear_btn: "View on Google Play",
-    plat_wear_status: "In publication process",
+    plat_wear_status: "Available on Google Play",
     plat_mobile_title: "Smartphones (Android)",
     plat_mobile_badge: "Mobile",
     plat_mobile_desc: "Full-scale companion management in your pocket. Explore comprehensive TamaDex dossiers, install community .tamapack mods, and sync progress via Google Drive.",
     plat_mobile_btn: "View on Google Play",
-    plat_mobile_status: "In publication process",
+    plat_mobile_status: "Available on Google Play",
 
     stat_fair: "Zero Pay-to-Win",
 
